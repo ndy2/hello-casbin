@@ -1,0 +1,5 @@
+casbin
+sqlalchemy
+psycopg2-binary
+casbin-sqlalchemy-adapter
+tabulate
