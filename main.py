@@ -164,5 +164,15 @@ def main():
     print_policy_table(e, api_keys, tools)
     print_hierarchy_policies(e)
 
+    # 5. Add agent1-key and grant agent1-level permission
+    print("\n=== 5. agent1-key added and agent1-level permission granted ===")
+    e.add_policy("agent1-group", "agent1", "call")
+    e.add_grouping_policy("agent1-key", "agent1-group")
+    e.save_policy()
+    api_keys = get_api_keys(e)
+    tools = get_tools_from_g2_resources(e)
+    print_policy_table(e, api_keys, tools)
+    print_hierarchy_policies(e)
+
 if __name__ == "__main__":
     main()
