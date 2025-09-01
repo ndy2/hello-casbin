@@ -5,6 +5,8 @@ This example demonstrates how to manage API keys, agents, microservice clusters 
 
 ## 사전 준비
 
+pgsql running - localhost:5432 with url `postgresql+psycopg2://rbac_user:yourpassword@localhost:5432/rbac`
+
 ```bash
 pip install -r requirements.txt
 ```
